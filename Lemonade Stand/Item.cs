@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lemonade_Stand
 {
-    class Item
+    public abstract class Item
     {
         //memeber variables
         int totalNumberOfItem;

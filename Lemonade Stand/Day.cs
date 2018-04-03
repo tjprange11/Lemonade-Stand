@@ -10,6 +10,7 @@ namespace Lemonade_Stand
     {
         //memeber variables
         Weather weather;
+        double dailyProfit;
         //constructor
 
         //member methods

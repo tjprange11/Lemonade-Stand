@@ -1,3 +1,8 @@
 C:\Users\Chief_Prange\Desktop\Dev\C#\RPSLS\Lemonade Stand\Lemonade Stand\bin\Debug\Lemonade Stand.exe.config
 C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade Stand\Lemonade Stand\bin\Debug\Lemonade Stand.exe.config
 C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade-Stand\Lemonade Stand\bin\Debug\Lemonade Stand.exe.config
+C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade-Stand\Lemonade Stand\bin\Debug\Lemonade Stand.exe
+C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade-Stand\Lemonade Stand\bin\Debug\Lemonade Stand.pdb
+C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade-Stand\Lemonade Stand\obj\Debug\Lemonade Stand.csprojResolveAssemblyReference.cache
+C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade-Stand\Lemonade Stand\obj\Debug\Lemonade Stand.exe
+C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade-Stand\Lemonade Stand\obj\Debug\Lemonade Stand.pdb

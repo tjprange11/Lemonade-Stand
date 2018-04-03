@@ -13,5 +13,12 @@ namespace Lemonade_Stand
         //constructor
 
         //member methods
+        public Inventory Inventory
+        {
+            get
+            {
+                return inventory;
+            }
+        }
     }
 }

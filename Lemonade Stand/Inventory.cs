@@ -15,5 +15,26 @@ namespace Lemonade_Stand
         //constructor
 
         //member methods
+        public Lemon Lemons
+        {
+            get
+            {
+                return lemons;
+            }
+        }
+        public Sugar Sugar
+        {
+            get
+            {
+                return sugar;
+            }
+        }
+        public Ice Ice
+        {
+            get
+            {
+                return ice;
+            }
+        }
     }
 }
