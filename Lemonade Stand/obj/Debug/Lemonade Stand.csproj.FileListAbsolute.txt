@@ -1,2 +1,3 @@
 C:\Users\Chief_Prange\Desktop\Dev\C#\RPSLS\Lemonade Stand\Lemonade Stand\bin\Debug\Lemonade Stand.exe.config
 C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade Stand\Lemonade Stand\bin\Debug\Lemonade Stand.exe.config
+C:\Users\Chief_Prange\Desktop\Dev\C#\Lemonade-Stand\Lemonade Stand\bin\Debug\Lemonade Stand.exe.config

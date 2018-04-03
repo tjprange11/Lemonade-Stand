@@ -24,5 +24,10 @@ namespace Lemonade_Stand
                 numberOfItemPerCup = value;
             }
         }
+        public void Melt()
+        {
+            UserInterface.displayMessage("The remaining ice melted!");
+            TotalNumberOfItem = 0;
+        }
     }
 }

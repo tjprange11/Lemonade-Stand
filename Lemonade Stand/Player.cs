@@ -9,7 +9,7 @@ namespace Lemonade_Stand
     class Player
     {
         //memeber variables
-
+        Inventory inventory;
         //constructor
 
         //member methods

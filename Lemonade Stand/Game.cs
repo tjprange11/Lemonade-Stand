@@ -9,7 +9,7 @@ namespace Lemonade_Stand
     class Game
     {
         //memeber variables
-
+        Player player;
         //constructor
 
         //member methods

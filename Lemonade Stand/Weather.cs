@@ -9,7 +9,8 @@ namespace Lemonade_Stand
     class Weather
     {
         //memeber variables
-
+        int highTemperature;
+        string weatherForecast;
         //constructor
 
         //member methods

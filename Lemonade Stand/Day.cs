@@ -9,7 +9,7 @@ namespace Lemonade_Stand
     class Day
     {
         //memeber variables
-
+        Weather weather;
         //constructor
 
         //member methods
