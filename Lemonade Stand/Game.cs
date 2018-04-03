@@ -25,8 +25,6 @@ namespace Lemonade_Stand
             UserInterface.displayRules();
             for (int i = 0; i < week.Count; i++)
             {
-                UserInterface.buyingCupsMenu();
-                player.Inventory.Cups += 25;
                 UserInterface.buyingLemonMenu();
                 UserInterface.buyingSugarMenu();
                 UserInterface.buyingIceMenu();
@@ -53,6 +51,27 @@ namespace Lemonade_Stand
                     break;
             }
         }
-        
+        public void buyLemons()
+        {
+            UserInterface.buyingLemonMenu();
+            string input = Console.ReadLine();
+            switch (input)
+            {
+                case "1":
+                    player.Inventory.Lemons.TotalNumberOfItem += 10;
+                    break;
+                case "2":
+                    player.Inventory.Lemons.TotalNumberOfItem += 30;
+                    break;
+                case "3":
+                    player.Inventory.Lemons.TotalNumberOfItem += 75;
+                    break;
+                default:
+                    UserInterface.displayMessage("Invalid Entry!");
+                    buyCups();
+                    break;
+            }
+        }
+
     }
 }

@@ -10,7 +10,9 @@ namespace Lemonade_Stand
     {
         //memeber variables
         Inventory inventory;
+        double wallet;
         //constructor
+
 
         //member methods
         public Inventory Inventory
@@ -18,6 +20,17 @@ namespace Lemonade_Stand
             get
             {
                 return inventory;
+            }
+        }
+        public double Wallet
+        {
+            get
+            {
+                return wallet;
+            }
+            set
+            {
+                wallet = value;
             }
         }
     }
