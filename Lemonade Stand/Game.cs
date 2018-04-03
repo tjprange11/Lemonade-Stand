@@ -37,13 +37,13 @@ namespace Lemonade_Stand
             switch (input)
             {
                 case "1":
-                    player.Inventory.Cups += 25;
+                    player.Inventory.Cups.TotalNumberOfItem += 25;
                     break;
                 case "2":
-                    player.Inventory.Cups += 50;
+                    player.Inventory.Cups.TotalNumberOfItem += 50;
                     break;
                 case "3":
-                    player.Inventory.Cups += 100;
+                    player.Inventory.Cups.TotalNumberOfItem += 100;
                     break;
                 default:
                     UserInterface.displayMessage("Invalid Entry!");
@@ -68,7 +68,49 @@ namespace Lemonade_Stand
                     break;
                 default:
                     UserInterface.displayMessage("Invalid Entry!");
-                    buyCups();
+                    buyLemons();
+                    break;
+            }
+        }
+        public void buySugar()
+        {
+            UserInterface.buyingSugarMenu();
+            string input = Console.ReadLine();
+            switch (input)
+            {
+                case "1":
+                    player.Inventory.Sugar.TotalNumberOfItem += 8;
+                    break;
+                case "2":
+                    player.Inventory.Sugar.TotalNumberOfItem += 20;
+                    break;
+                case "3":
+                    player.Inventory.Sugar.TotalNumberOfItem += 48;
+                    break;
+                default:
+                    UserInterface.displayMessage("Invalid Entry!");
+                    buySugar();
+                    break;
+            }
+        }
+        public void buyIce()
+        {
+            UserInterface.buyingIceMenu();
+            string input = Console.ReadLine();
+            switch (input)
+            {
+                case "1":
+                    player.Inventory.Ice.TotalNumberOfItem += 100;
+                    break;
+                case "2":
+                    player.Inventory.Ice.TotalNumberOfItem += 250;
+                    break;
+                case "3":
+                    player.Inventory.Ice.TotalNumberOfItem += 500;
+                    break;
+                default:
+                    UserInterface.displayMessage("Invalid Entry!");
+                    buyIce();
                     break;
             }
         }

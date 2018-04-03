@@ -9,22 +9,18 @@ namespace Lemonade_Stand
     class Inventory
     {
         //memeber variables
-        int cups;
+        Item cups;
         Lemon lemons;
         Sugar sugar;
         Ice ice;
         //constructor
 
         //member methods
-        public int Cups
+        public Item Cups
         {
             get
             {
                 return cups;
-            }
-            set
-            {
-                cups = value;
             }
         }
         public Lemon Lemons
