@@ -11,6 +11,11 @@ namespace Lemonade_Stand
         //memeber variables
         int numberOfItemPerCup;
         //constructor
+        public Ice() : base()
+        {
+            numberOfItemPerCup = 0;
+
+        }
 
         //member methods
         public int NumberOfItemPerCup
@@ -28,6 +33,10 @@ namespace Lemonade_Stand
         {
             UserInterface.displayMessage("The remaining ice melted!");
             TotalNumberOfItem = 0;
+        }
+        public bool checkIce()
+        {
+            return TotalNumberOfItem > numberOfItemPerCup;
         }
     }
 }

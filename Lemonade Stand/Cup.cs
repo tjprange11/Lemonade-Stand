@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace Lemonade_Stand
 {
-    class Sugar : Item
+    class Cup : Item
     {
         //memeber variables
-        int numberOfItemPerPitcher;
+        double pricePerCup;
         //constructor
-        public Sugar() : base()
+        public Cup() : base()
         {
-            numberOfItemPerPitcher = 0;
+            pricePerCup = 0;
         }
         //member methods
-        public int NumberOfItemPerPitcher
+        public double PricePerCup
         {
             get
             {
-                return numberOfItemPerPitcher;
+                return pricePerCup;
             }
             set
             {
-                numberOfItemPerPitcher = value;
+                pricePerCup = value;
             }
         }
-        public bool checkSugar()
+        public bool checkCups()
         {
-            return TotalNumberOfItem > numberOfItemPerPitcher;
+            return TotalNumberOfItem > 0;
         }
     }
 }

@@ -16,7 +16,24 @@ namespace Lemonade_Stand
         {
             Random rnd = new Random();
             highTemperature = rnd.Next(50, 100);
+            List<string> weather = new List<string>() { "overcast", "cloudy", "rainy", "sunny", "cloudy and sunny", "hazy" };
+            weatherForecast = weather.ElementAt<string>(rnd.Next(0, weather.Count - 1));
         }
         //member methods
+        public int HighTemperature
+        {
+            get
+            {
+                return highTemperature;
+            }
+        }
+        public string WeatherForecast
+        {
+            get
+            {
+                return weatherForecast;
+            }
+        }
+
     }
 }

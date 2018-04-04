@@ -11,6 +11,10 @@ namespace Lemonade_Stand
         //memeber variables
         int totalNumberOfItem;
         //constructor
+        public Item()
+        {
+            totalNumberOfItem = 0;
+        }
 
         //member methods
         public int TotalNumberOfItem

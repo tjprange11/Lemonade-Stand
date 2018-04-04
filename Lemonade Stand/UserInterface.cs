@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,6 +48,43 @@ namespace Lemonade_Stand
             displayMessage("2 : 250 ice cubes for $2.02");
             displayMessage("3 : 500 ice cubes for $3.73");
             displayMessage("Please enter in one of the number or '0' for no ice cubes!");
+        }
+        public static void displayWeather(int highTemp, string forecast, int day)
+        {
+            displayMessage("*************************************************************************");
+            displayMessage("Day : " + day);
+            displayMessage("The High Temperature :" + highTemp);
+            displayMessage("The Forecast : " + forecast);
+            displayMessage("*************************************************************************");
+        }
+        public static void displayWallet(double money)
+        {
+            Console.WriteLine("You have : " + money.ToString("C", CultureInfo.CurrentCulture));
+        }
+        public static void endDayReport(double customers, double profit)
+        {
+            if(profit > 0)
+            {
+                Console.WriteLine("You made " + profit.ToString("C", CultureInfo.CurrentCulture) + " today!");
+            }
+            else
+            {
+                Console.WriteLine("You lost " + profit.ToString("C", CultureInfo.CurrentCulture) + " today!");
+            }
+            displayMessage("You had " + customers + " customers today!");
+        }
+        public static void endGameReport(double profit)
+        {
+            displayMessage("The Game is OVER!!!");
+            if (profit > 0)
+            {
+                Console.WriteLine("You made " + profit.ToString("C", CultureInfo.CurrentCulture) + " over the week!");
+            }
+            else
+            {
+                Console.WriteLine("You lost " + profit.ToString("C", CultureInfo.CurrentCulture) + " over the week!");
+            }
+
         }
 
     }

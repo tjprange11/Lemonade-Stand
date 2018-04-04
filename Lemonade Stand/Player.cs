@@ -11,11 +11,13 @@ namespace Lemonade_Stand
         //memeber variables
         Inventory inventory;
         double wallet;
+        double totalProfit;
         //constructor
         public Player()
         {
             inventory = new Inventory();
             wallet = 20;
+            totalProfit = 0;
         }
 
         //member methods
@@ -35,6 +37,17 @@ namespace Lemonade_Stand
             set
             {
                 wallet = value;
+            }
+        }
+        public double TotalProfit
+        {
+            get
+            {
+                return totalProfit;
+            }
+            set
+            {
+                totalProfit = value;
             }
         }
     }

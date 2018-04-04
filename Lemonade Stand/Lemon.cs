@@ -11,7 +11,10 @@ namespace Lemonade_Stand
         //memeber variables
         int numberOfItemPerPitcher;
         //constructor
-
+        public Lemon() : base()
+        {
+            numberOfItemPerPitcher = 0;
+        }
         //member methods
         public int NumberOfItemPerPitcher
         {
@@ -23,6 +26,10 @@ namespace Lemonade_Stand
             {
                 numberOfItemPerPitcher = value;
             }
+        }
+        public bool checkLemons()
+        {
+            return TotalNumberOfItem > numberOfItemPerPitcher;
         }
     }
 }

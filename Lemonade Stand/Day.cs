@@ -15,11 +15,43 @@ namespace Lemonade_Stand
         //constructor
         public Day()
         {
-            for(int i = 0;i < 100;i++)
-            {
-                customers.Add(new Customer());
-            }
+            weather = new Weather();
+            dailyProfit = 0;
+            customers = new List<Customer>();
         }
         //member methods
+        public List<Customer> Customers
+        {
+            get
+            {
+                return customers;
+            }
+        }
+        public void setCustomers(double price)
+        {
+            Random rnd = new Random();
+            for (int i = 0; i < 100; i++)
+            {
+                customers.Add(new Customer(price, weather.HighTemperature,rnd));
+            }
+        }
+        public Weather Weather
+        {
+            get
+            {
+                return weather;
+            }
+        }
+        public double DailyProfit
+        {
+            get
+            {
+                return dailyProfit;
+            }
+            set
+            {
+                dailyProfit = value;
+            }
+        }
     }
 }

@@ -11,17 +11,26 @@ namespace Lemonade_Stand
         //memeber variables
         bool buysLemonade;
         //constructor
-        public Customer(double price, int temperature)
+        public Customer(double price, int temperature,Random rnd)
         {
-            double dif = temperature - price;
-            Random rnd = new Random();
-            int random = rnd.Next(25,50);
-            if(random >= dif)
+            double dif = temperature - (price*100);
+            if(rnd.Next(25, 50) <= dif)
             {
                 buysLemonade = true;
             }
+            else
+            {
+                buysLemonade = false;
+            }
         }
         //member methods
+        public bool BuysLemondade
+        {
+            get
+            {
+                return buysLemonade;
+            }
+        }
 
     }
 }

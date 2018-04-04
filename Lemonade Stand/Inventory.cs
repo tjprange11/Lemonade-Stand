@@ -9,14 +9,21 @@ namespace Lemonade_Stand
     class Inventory
     {
         //memeber variables
-        Item cups;
+        Cup cups;
         Lemon lemons;
         Sugar sugar;
         Ice ice;
         //constructor
+        public Inventory()
+        {
+            cups = new Cup();
+            lemons = new Lemon();
+            sugar = new Sugar();
+            ice = new Ice();
+        }
 
         //member methods
-        public Item Cups
+        public Cup Cups
         {
             get
             {
