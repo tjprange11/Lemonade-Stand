@@ -12,7 +12,11 @@ namespace Lemonade_Stand
         Inventory inventory;
         double wallet;
         //constructor
-
+        public Player()
+        {
+            inventory = new Inventory();
+            wallet = 20;
+        }
 
         //member methods
         public Inventory Inventory

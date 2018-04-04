@@ -11,8 +11,15 @@ namespace Lemonade_Stand
         //memeber variables
         Weather weather;
         double dailyProfit;
+        List<Customer> customers;
         //constructor
-
+        public Day()
+        {
+            for(int i = 0;i < 100;i++)
+            {
+                customers.Add(new Customer());
+            }
+        }
         //member methods
     }
 }

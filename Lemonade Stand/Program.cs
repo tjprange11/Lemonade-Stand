@@ -10,8 +10,7 @@ namespace Lemonade_Stand
     {
         static void Main(string[] args)
         {
-            UserInterface.displayRules();
-            Console.ReadLine();
+            
         }
     }
 }
